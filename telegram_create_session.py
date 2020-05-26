@@ -29,6 +29,6 @@ with TelegramClient(entity, api_id, api_hash) as client:
                 channel = my_channel,
                 id = [message.id]
             ))
-    
-    client.stop()
+            
+    client.log_out()
     
